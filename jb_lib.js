@@ -6,6 +6,12 @@
 //2014-10-20
 function enterPressed(){
 	var screenValue = document.getElementById("dispTxt").value;
+        if (screenValue.trim().length  == 0) {
+ 		return;
+  	}
+        if(!window.event.ctrlKey) {
+           document.getElementById("dispTxt").value = '';
+        }
 	var historyList = document.querySelector("#history ul");
 	newLi = document.createElement("li");
 	newLi.innerHTML = screenValue;
