@@ -3,7 +3,9 @@ function enterPressed(){
 	if (screenValue.trim().length  == 0) {
 		return;
 	}
-	document.getElementById("screen").value = '';
+	if(!window.event.ctrlKey) {
+           document.getElementById("screen").value = '';   
+    	}
 	var historyList = document.querySelector(".historyFrame > ul");
 	var newLi = document.createElement("li");
 	newLi.innerHTML = escape(screenValue);
