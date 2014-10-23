@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script src="targil.js" ></script>
+		<style>
+			 .historyFrame ul {
+				border: 1px solid black;
+				height: 200px;
+				list-style-type: none;
+				overflow-y: auto;				
+			 }
+		</style>   
+    </head>
+    
+    <body>
+	
+	<div id="keyboard">
+		<input type="text" style="width:200px;" id="screen" />
+		<button onclick="clicked('1')">1</button>
+		<button onclick="clicked('g')">g</button>
+		<button onclick="enterPressed()">Enter</button>
+		<!--put your k
+		eyboard and screen here-->
+	</div>
+	<div class="historyFrame">
+		<div><h1>History</h1></div>
+		<ul></ul>
+	</div>
+	
+	<div class="historyFrame">
+	</div>
+    </body>
+</html>    
